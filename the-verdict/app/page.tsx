@@ -88,6 +88,7 @@ async function writeContract(fn: string, args: (string | number | boolean | bigi
       address: CONTRACT_ADDRESS as `0x${string}`,
       functionName: fn,
       args,
+      value: BigInt(0),
       leaderOnly: true,
     });
     await client.waitForTransactionReceipt({
