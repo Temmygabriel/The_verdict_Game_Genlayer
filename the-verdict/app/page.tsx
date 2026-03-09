@@ -6,7 +6,7 @@ import { createClient, createAccount, studionet } from "@genlayer/js";
 // ─────────────────────────────────────────────────────────────────────────────
 //  🔧 CONFIG — EDIT THIS AFTER DEPLOYING YOUR CONTRACT
 // ─────────────────────────────────────────────────────────────────────────────
-const CONTRACT_ADDRESS = "PASTE_YOUR_CONTRACT_ADDRESS_HERE";
+const CONTRACT_ADDRESS = "0xCb6D4253887506727EdA59553Da26923065f8016";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const POLL_INTERVAL = 4000;
