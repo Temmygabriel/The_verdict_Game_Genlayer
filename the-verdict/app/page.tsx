@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { createClient, createAccount } from "genlayer-js";
 import { studionet } from "genlayer-js/chains";
+import { TransactionStatus } from "genlayer-js/types";
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  🔧 CONFIG — EDIT THIS AFTER DEPLOYING YOUR CONTRACT
@@ -93,7 +94,7 @@ async function writeContract(fn: string, args: (string | number | boolean | bigi
     });
     await client.waitForTransactionReceipt({
       hash,
-      status: "ACCEPTED",
+      status: TransactionStatus.ACCEPTED,
       retries: 60,
       interval: 3000,
     });
