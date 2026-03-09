@@ -81,7 +81,7 @@ async function readGameCount(): Promise<number> {
   }
 }
 
-async function writeContract(fn: string, args: unknown[]): Promise<boolean> {
+async function writeContract(fn: string, args: (string | number | boolean | bigint)[]): Promise<boolean> {
   try {
     const { client } = makeClient();
     const hash = await client.writeContract({
